@@ -22,11 +22,11 @@
 #endif
 
 #if !defined(@MY_LIBRARY_EXPORT_DIRECTIVE@)
-//#  if defined(CTK_SHARED)
+#  if defined(@MY_LIBNAME@_EXPORTS)
 #    define @MY_LIBRARY_EXPORT_DIRECTIVE@ Q_DECL_EXPORT
-//#  else
-//#    define @MY_LIBRARY_EXPORT_DIRECTIVE@
-//#  endif
+#  else
+#    define @MY_LIBRARY_EXPORT_DIRECTIVE@ Q_DECL_IMPORT
+#  endif
 #endif
 
 @CTK_EXPORT_CUSTOM_CONTENT@
