@@ -91,7 +91,7 @@ if(NOT DEFINED PYTHONQT_INSTALL_DIR)
 
   ctkFunctionExtractOptimizedLibrary(PYTHON_LIBRARIES PYTHON_LIBRARY)
 
-  set(revision_tag 7ef4c5ee066b8ef1e7dc609b14071d504f59d4ba) # patched-v4.0.1-2026-03-16-5cd9b581f
+  set(revision_tag 41255c108e157760f3f349223de87fd5dd6baa36)
   if(${proj}_REVISION_TAG)
     set(revision_tag ${${proj}_REVISION_TAG})
   endif()
@@ -103,7 +103,7 @@ if(NOT DEFINED PYTHONQT_INSTALL_DIR)
     set(location_args GIT_REPOSITORY ${${proj}_GIT_REPOSITORY}
                       GIT_TAG ${revision_tag})
   else()
-    set(location_args GIT_REPOSITORY "https://github.com/commontk/PythonQt.git"
+    set(location_args GIT_REPOSITORY "https://github.com/hubutui/PythonQt.git"
                       GIT_TAG ${revision_tag})
   endif()
 
